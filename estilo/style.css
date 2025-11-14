@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@charset "UTF-8";
+:root{
+--color1:#c1ff72 ;
+--color2: #5e17eb;
+--color3: #ff5757;
+--color4: white;
+}
+
+
+*{
+    font-family: "Urbanist", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body, html{
+    background-color: var(--color1);
+    height: 100vh ;
+    width: 100vw;
+   
+    
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    
+}
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*importante para a caixa voltar para a parte central e ficar sem ter barra de rolagem. sEMPRE FICAR NO MEIO DA TELA*/
+    overflow: hidden; /* TUDO QUE TIVER FORA DA BORDA SERÁ CURVADO*/
+
+
+    background-color: white;
+    width: 250px ;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
+
+    transition: width, 3s, height, 3s;
+    
+}
+.imagem{
+    display: block;
+    background:var(--color2) url(../imagem/002.jpg) no-repeat;
+    height: 150px;
+    background-size: contain;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+   
+   
+}
+.formulario{
+    display: block;
+    padding: 15px;
+    
+    
+}
+.formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.formulario > p{
+    font-size: 14px;
+}
+.campo{
+    margin-left: 20px;
+}
+input[type=submit]{
+    margin: 10px 0px 0px 35px;
+    display: block;
+    font-size: 15px;
+
+    width: 120%;
+    height: 20px;
+    background-color: var(--color2);
+    color: var(--color1);
+    border: var(--color3);
+    border-radius: 5px;
+    
+}
+input[type=submit]:hover{
+    background-color: var(--color1);
+    color: var(--color3);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.263);
+}
+.botao{
+    display: block;
+    margin: -10px 0px 0px 35px;
+    padding: 5px;
+
+    background-color:white;
+    color: var(--color2);
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 120%;
+    height: 50%;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+.botao:hover{
+    background-color: var(--color1);
+    color: var(--color2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.263);
+    
+}
+

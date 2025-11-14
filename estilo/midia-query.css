@@ -1,0 +1,76 @@
+/*tablet*/
+@media screen and (min-width:768px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, var(--color1), var(--color2));
+    }
+    #login{
+        width: 80vw;
+    }
+    .imagem{
+        float:left;
+        width: 40%;
+        height: 500px;  
+        
+    }
+    .formulario{
+        float: right;
+        width: 60%;
+    }
+    .formulario > h1{
+        font-size: 30px;
+    }
+    .formulario > p{
+        font-size: 17px;
+    }
+    label{
+        width: 500px;    
+    }
+    .campo{
+        padding-left: 250px;
+        margin-left: 50px;
+        
+    }
+    .botao{
+        margin: -20px 0px 0px 35px;
+    }
+    .material-icons{
+        font-size: 35px;
+        
+    }
+}
+
+/* tela grande*/
+@media screen and (min-width:992px) {
+    body{
+        background-image: linear-gradient(to top, var(--color1), var(--color1), var(--color2));
+    }
+    #login{
+        width: 990px;
+        font-size: 20px;
+
+    }
+    .imagem{
+        float: right;
+        width: 50%;
+        height: 500px ;
+    }
+    .formulario{
+        float: left;
+        width: 450px;
+        
+    }
+    .formulario > p{
+        font-size: 18px;
+    }
+    .campo{
+        margin-left: 20px;
+    }
+    .material-icons{
+        font-size: 30px;
+        
+    }
+} 
+
+    
+
+
